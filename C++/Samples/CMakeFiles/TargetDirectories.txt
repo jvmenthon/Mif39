@@ -1,0 +1,3 @@
+/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir
