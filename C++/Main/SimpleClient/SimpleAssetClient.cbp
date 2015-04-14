@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="SimpleAssetClient" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\AssetGenerics\;CMake Files\AssetInterfaces\;CMake Files\Assets\;CMake Files\FuzzyLogicBehaviour\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\;CMake Files\Utility\;CMake Files\Networking\;CMake Files\TcpNetworking\;CMake Files\Wavefront\;CMake Files\QImageLoader\;CMake Files\Samples\;CMake Files\Samples\WavefrontTest\;CMake Files\Samples\SimpleAssetServer\;CMake Files\Samples\SimpleAssetClient\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="SimpleAssetClient">
+         <Option output="/home/babs/Documents/Master/39-TechnoInnov/C++/bin/SimpleAssetClient" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/babs/Documents/Master/39-TechnoInnov/C++/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_CORE_LIB" />
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/." />
+            <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient" />
+            <Add directory="/usr/include/qt5" />
+            <Add directory="/usr/include/qt5/QtCore" />
+            <Add directory="/usr/include/qt5/QtGui" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 SimpleAssetClient" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="SimpleAssetClient/fast">
+         <Option output="/home/babs/Documents/Master/39-TechnoInnov/C++/bin/SimpleAssetClient" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/babs/Documents/Master/39-TechnoInnov/C++/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DQT_CORE_LIB" />
+            <Add option="-DQT_NO_DEBUG" />
+            <Add option="-DQT_GUI_LIB" />
+            <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/." />
+            <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient" />
+            <Add directory="/usr/include/qt5" />
+            <Add directory="/usr/include/qt5/QtCore" />
+            <Add directory="/usr/include/qt5/QtGui" />
+            <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 SimpleAssetClient/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/main.cpp">
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/AssetGenerics/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\AssetGenerics\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/AssetGenerics/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\AssetGenerics\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/AssetInterfaces/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\AssetInterfaces\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/AssetInterfaces/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\AssetInterfaces\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Assets/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Assets\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Assets/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Assets\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\FuzzyLogicBehaviour\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\FuzzyLogicBehaviour\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Core\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Utility/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Utility\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Utility/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Utility\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Networking/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Networking\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Networking/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Networking\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/TcpNetworking/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\TcpNetworking\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/TcpNetworking/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\TcpNetworking\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Wavefront/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Wavefront\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Wavefront/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Wavefront\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/QImageLoader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\QImageLoader\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/QImageLoader/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\QImageLoader\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\WavefrontTest\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\WavefrontTest\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\WavefrontTest\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetServer\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetServer\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetServer\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetClient\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetClient\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\Samples\SimpleAssetClient\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
