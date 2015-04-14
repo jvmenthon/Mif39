@@ -5,3 +5,5 @@
 *.includecache
 build/
 CMakeLists.txt.user
+CMakeCache.txt
+cmake_install.cmake
