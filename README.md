@@ -1,8 +1,8 @@
-# Mif39
 
-A faire : 
-modifier le CMakeLists.txt principal pour spécifier le chemin d'accès vers QT
-
+## TODO
+- client: envoyer l'obj au serveur via requete TCP
+- serveur: remplir la structure de données Mesh pour le monde
+- serveur: lire la requete client et completer la structure de données Mesh 
 
 ## Probleme
 L'environnement est modifiable uniquement par le thread princpal, il va falloir trouver un mecanisme pour transferer les données a ce thread
