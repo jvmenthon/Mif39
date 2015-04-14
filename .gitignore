@@ -1,4 +1,7 @@
+*.cbp
 *.o
 *.so
 *.make
 *.includecache
+build/
+CMakeLists.txt.user
