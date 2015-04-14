@@ -74,7 +74,7 @@ Utility/preinstall:
 Utility/CMakeFiles/Utility.dir/all:
 	$(MAKE) -f Utility/CMakeFiles/Utility.dir/build.make Utility/CMakeFiles/Utility.dir/depend
 	$(MAKE) -f Utility/CMakeFiles/Utility.dir/build.make Utility/CMakeFiles/Utility.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  21 22 23 24 25 26
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  25 26 27 28 29 30
 	@echo "Built target Utility"
 .PHONY : Utility/CMakeFiles/Utility.dir/all
 
@@ -124,7 +124,7 @@ Networking/preinstall:
 Networking/CMakeFiles/Networking.dir/all: Utility/CMakeFiles/Utility.dir/all
 	$(MAKE) -f Networking/CMakeFiles/Networking.dir/build.make Networking/CMakeFiles/Networking.dir/depend
 	$(MAKE) -f Networking/CMakeFiles/Networking.dir/build.make Networking/CMakeFiles/Networking.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  12 13 14
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  14 15 16
 	@echo "Built target Networking"
 .PHONY : Networking/CMakeFiles/Networking.dir/all
 
@@ -175,7 +175,7 @@ TcpNetworking/CMakeFiles/TcpNetworking.dir/all: Utility/CMakeFiles/Utility.dir/a
 TcpNetworking/CMakeFiles/TcpNetworking.dir/all: Networking/CMakeFiles/Networking.dir/all
 	$(MAKE) -f TcpNetworking/CMakeFiles/TcpNetworking.dir/build.make TcpNetworking/CMakeFiles/TcpNetworking.dir/depend
 	$(MAKE) -f TcpNetworking/CMakeFiles/TcpNetworking.dir/build.make TcpNetworking/CMakeFiles/TcpNetworking.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  18 19 20
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  22 23 24
 	@echo "Built target TcpNetworking"
 .PHONY : TcpNetworking/CMakeFiles/TcpNetworking.dir/all
 
@@ -328,7 +328,7 @@ Assets/CMakeFiles/Assets.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir
 Assets/CMakeFiles/Assets.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 	$(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/depend
 	$(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  8 9 10 11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  8 9 10 11 12
 	@echo "Built target Assets"
 .PHONY : Assets/CMakeFiles/Assets.dir/all
 
@@ -338,7 +338,7 @@ all: Assets/CMakeFiles/Assets.dir/all
 
 # Build rule for subdir invocation for target.
 Assets/CMakeFiles/Assets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 Assets/CMakeFiles/Assets.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : Assets/CMakeFiles/Assets.dir/rule
@@ -381,7 +381,7 @@ Wavefront/CMakeFiles/Wavefront.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.d
 Wavefront/CMakeFiles/Wavefront.dir/all: Assets/CMakeFiles/Assets.dir/all
 	$(MAKE) -f Wavefront/CMakeFiles/Wavefront.dir/build.make Wavefront/CMakeFiles/Wavefront.dir/depend
 	$(MAKE) -f Wavefront/CMakeFiles/Wavefront.dir/build.make Wavefront/CMakeFiles/Wavefront.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  27 28 29 30
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  31 32 33 34
 	@echo "Built target Wavefront"
 .PHONY : Wavefront/CMakeFiles/Wavefront.dir/all
 
@@ -391,7 +391,7 @@ all: Wavefront/CMakeFiles/Wavefront.dir/all
 
 # Build rule for subdir invocation for target.
 Wavefront/CMakeFiles/Wavefront.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 Wavefront/CMakeFiles/Wavefront.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : Wavefront/CMakeFiles/Wavefront.dir/rule
@@ -407,6 +407,59 @@ Wavefront/CMakeFiles/Wavefront.dir/clean:
 
 # clean rule for target.
 clean: Wavefront/CMakeFiles/Wavefront.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory FuzzyLogicBehaviour
+
+# Convenience name for "all" pass in the directory.
+FuzzyLogicBehaviour/all: FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all
+.PHONY : FuzzyLogicBehaviour/all
+
+# Convenience name for "clean" pass in the directory.
+FuzzyLogicBehaviour/clean: FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/clean
+.PHONY : FuzzyLogicBehaviour/clean
+
+# Convenience name for "preinstall" pass in the directory.
+FuzzyLogicBehaviour/preinstall:
+.PHONY : FuzzyLogicBehaviour/preinstall
+
+#=============================================================================
+# Target rules for target FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir
+
+# All Build rule for target.
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all: Utility/CMakeFiles/Utility.dir/all
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all: Assets/CMakeFiles/Assets.dir/all
+	$(MAKE) -f FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build.make FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/depend
+	$(MAKE) -f FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build.make FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  13
+	@echo "Built target FuzzyLogicBehaviour"
+.PHONY : FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all
+
+# Include target in all.
+all: FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
+.PHONY : FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/rule
+
+# Convenience name for target.
+FuzzyLogicBehaviour: FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/rule
+.PHONY : FuzzyLogicBehaviour
+
+# clean rule for target.
+FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/clean:
+	$(MAKE) -f FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build.make FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/clean
+.PHONY : FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/clean
+
+# clean rule for target.
+clean: FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -434,7 +487,7 @@ QImageLoader/CMakeFiles/QImageLoader.dir/all: AssetGenerics/CMakeFiles/AssetGene
 QImageLoader/CMakeFiles/QImageLoader.dir/all: Assets/CMakeFiles/Assets.dir/all
 	$(MAKE) -f QImageLoader/CMakeFiles/QImageLoader.dir/build.make QImageLoader/CMakeFiles/QImageLoader.dir/depend
 	$(MAKE) -f QImageLoader/CMakeFiles/QImageLoader.dir/build.make QImageLoader/CMakeFiles/QImageLoader.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  17
 	@echo "Built target QImageLoader"
 .PHONY : QImageLoader/CMakeFiles/QImageLoader.dir/all
 
@@ -444,7 +497,7 @@ all: QImageLoader/CMakeFiles/QImageLoader.dir/all
 
 # Build rule for subdir invocation for target.
 QImageLoader/CMakeFiles/QImageLoader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 QImageLoader/CMakeFiles/QImageLoader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : QImageLoader/CMakeFiles/QImageLoader.dir/rule
@@ -510,7 +563,7 @@ Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/all: Wavefront/CMakeFiles/Wav
 Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/all: QImageLoader/CMakeFiles/QImageLoader.dir/all
 	$(MAKE) -f Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/build.make Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/depend
 	$(MAKE) -f Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/build.make Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  31
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  35
 	@echo "Built target WavefrontTest"
 .PHONY : Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/all
 
@@ -520,7 +573,7 @@ all: Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/all
 
 # Build rule for subdir invocation for target.
 Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/rule
@@ -558,16 +611,16 @@ Samples/SimpleAssetServer/preinstall:
 
 # All Build rule for target.
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Networking/CMakeFiles/Networking.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Assets/CMakeFiles/Assets.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: QImageLoader/CMakeFiles/QImageLoader.dir/all
 	$(MAKE) -f Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/build.make Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/depend
 	$(MAKE) -f Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/build.make Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  19
 	@echo "Built target SimpleAssetServer"
 .PHONY : Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all
 
@@ -577,7 +630,7 @@ all: Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all
 
 # Build rule for subdir invocation for target.
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/rule
@@ -615,16 +668,16 @@ Samples/SimpleAssetClient/preinstall:
 
 # All Build rule for target.
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Networking/CMakeFiles/Networking.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Assets/CMakeFiles/Assets.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: QImageLoader/CMakeFiles/QImageLoader.dir/all
 	$(MAKE) -f Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/build.make Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/depend
 	$(MAKE) -f Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/build.make Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  16
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  18
 	@echo "Built target SimpleAssetClient"
 .PHONY : Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all
 
@@ -634,7 +687,7 @@ all: Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all
 
 # Build rule for subdir invocation for target.
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
 .PHONY : Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/rule
@@ -650,6 +703,138 @@ Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/clean:
 
 # clean rule for target.
 clean: Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Main
+
+# Convenience name for "all" pass in the directory.
+Main/all: Main/SimpleServer/all
+Main/all: Main/SimpleClient/all
+.PHONY : Main/all
+
+# Convenience name for "clean" pass in the directory.
+Main/clean: Main/SimpleServer/clean
+Main/clean: Main/SimpleClient/clean
+.PHONY : Main/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Main/preinstall: Main/SimpleServer/preinstall
+Main/preinstall: Main/SimpleClient/preinstall
+.PHONY : Main/preinstall
+
+#=============================================================================
+# Directory level rules for directory Main/SimpleServer
+
+# Convenience name for "all" pass in the directory.
+Main/SimpleServer/all: Main/SimpleServer/CMakeFiles/SimpleServer.dir/all
+.PHONY : Main/SimpleServer/all
+
+# Convenience name for "clean" pass in the directory.
+Main/SimpleServer/clean: Main/SimpleServer/CMakeFiles/SimpleServer.dir/clean
+.PHONY : Main/SimpleServer/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Main/SimpleServer/preinstall:
+.PHONY : Main/SimpleServer/preinstall
+
+#=============================================================================
+# Target rules for target Main/SimpleServer/CMakeFiles/SimpleServer.dir
+
+# All Build rule for target.
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Utility/CMakeFiles/Utility.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Assets/CMakeFiles/Assets.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: QImageLoader/CMakeFiles/QImageLoader.dir/all
+	$(MAKE) -f Main/SimpleServer/CMakeFiles/SimpleServer.dir/build.make Main/SimpleServer/CMakeFiles/SimpleServer.dir/depend
+	$(MAKE) -f Main/SimpleServer/CMakeFiles/SimpleServer.dir/build.make Main/SimpleServer/CMakeFiles/SimpleServer.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  21
+	@echo "Built target SimpleServer"
+.PHONY : Main/SimpleServer/CMakeFiles/SimpleServer.dir/all
+
+# Include target in all.
+all: Main/SimpleServer/CMakeFiles/SimpleServer.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
+.PHONY : Main/SimpleServer/CMakeFiles/SimpleServer.dir/rule
+
+# Convenience name for target.
+SimpleServer: Main/SimpleServer/CMakeFiles/SimpleServer.dir/rule
+.PHONY : SimpleServer
+
+# clean rule for target.
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/clean:
+	$(MAKE) -f Main/SimpleServer/CMakeFiles/SimpleServer.dir/build.make Main/SimpleServer/CMakeFiles/SimpleServer.dir/clean
+.PHONY : Main/SimpleServer/CMakeFiles/SimpleServer.dir/clean
+
+# clean rule for target.
+clean: Main/SimpleServer/CMakeFiles/SimpleServer.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory Main/SimpleClient
+
+# Convenience name for "all" pass in the directory.
+Main/SimpleClient/all: Main/SimpleClient/CMakeFiles/SimpleClient.dir/all
+.PHONY : Main/SimpleClient/all
+
+# Convenience name for "clean" pass in the directory.
+Main/SimpleClient/clean: Main/SimpleClient/CMakeFiles/SimpleClient.dir/clean
+.PHONY : Main/SimpleClient/clean
+
+# Convenience name for "preinstall" pass in the directory.
+Main/SimpleClient/preinstall:
+.PHONY : Main/SimpleClient/preinstall
+
+#=============================================================================
+# Target rules for target Main/SimpleClient/CMakeFiles/SimpleClient.dir
+
+# All Build rule for target.
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Utility/CMakeFiles/Utility.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Assets/CMakeFiles/Assets.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: QImageLoader/CMakeFiles/QImageLoader.dir/all
+	$(MAKE) -f Main/SimpleClient/CMakeFiles/SimpleClient.dir/build.make Main/SimpleClient/CMakeFiles/SimpleClient.dir/depend
+	$(MAKE) -f Main/SimpleClient/CMakeFiles/SimpleClient.dir/build.make Main/SimpleClient/CMakeFiles/SimpleClient.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  20
+	@echo "Built target SimpleClient"
+.PHONY : Main/SimpleClient/CMakeFiles/SimpleClient.dir/all
+
+# Include target in all.
+all: Main/SimpleClient/CMakeFiles/SimpleClient.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles 0
+.PHONY : Main/SimpleClient/CMakeFiles/SimpleClient.dir/rule
+
+# Convenience name for target.
+SimpleClient: Main/SimpleClient/CMakeFiles/SimpleClient.dir/rule
+.PHONY : SimpleClient
+
+# clean rule for target.
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/clean:
+	$(MAKE) -f Main/SimpleClient/CMakeFiles/SimpleClient.dir/build.make Main/SimpleClient/CMakeFiles/SimpleClient.dir/clean
+.PHONY : Main/SimpleClient/CMakeFiles/SimpleClient.dir/clean
+
+# clean rule for target.
+clean: Main/SimpleClient/CMakeFiles/SimpleClient.dir/clean
 .PHONY : clean
 
 #=============================================================================

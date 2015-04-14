@@ -190,6 +190,19 @@ Wavefront/fast:
 .PHONY : Wavefront/fast
 
 #=============================================================================
+# Target rules for targets named FuzzyLogicBehaviour
+
+# Build rule for target.
+FuzzyLogicBehaviour: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FuzzyLogicBehaviour
+.PHONY : FuzzyLogicBehaviour
+
+# fast build rule for target.
+FuzzyLogicBehaviour/fast:
+	$(MAKE) -f FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build.make FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/build
+.PHONY : FuzzyLogicBehaviour/fast
+
+#=============================================================================
 # Target rules for targets named QImageLoader
 
 # Build rule for target.
@@ -241,6 +254,32 @@ SimpleAssetClient/fast:
 	$(MAKE) -f Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/build.make Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/build
 .PHONY : SimpleAssetClient/fast
 
+#=============================================================================
+# Target rules for targets named SimpleServer
+
+# Build rule for target.
+SimpleServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SimpleServer
+.PHONY : SimpleServer
+
+# fast build rule for target.
+SimpleServer/fast:
+	$(MAKE) -f Main/SimpleServer/CMakeFiles/SimpleServer.dir/build.make Main/SimpleServer/CMakeFiles/SimpleServer.dir/build
+.PHONY : SimpleServer/fast
+
+#=============================================================================
+# Target rules for targets named SimpleClient
+
+# Build rule for target.
+SimpleClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SimpleClient
+.PHONY : SimpleClient
+
+# fast build rule for target.
+SimpleClient/fast:
+	$(MAKE) -f Main/SimpleClient/CMakeFiles/SimpleClient.dir/build.make Main/SimpleClient/CMakeFiles/SimpleClient.dir/build
+.PHONY : SimpleClient/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -256,10 +295,13 @@ help:
 	@echo "... AssetGenerics"
 	@echo "... Assets"
 	@echo "... Wavefront"
+	@echo "... FuzzyLogicBehaviour"
 	@echo "... QImageLoader"
 	@echo "... WavefrontTest"
 	@echo "... SimpleAssetServer"
 	@echo "... SimpleAssetClient"
+	@echo "... SimpleServer"
+	@echo "... SimpleClient"
 .PHONY : help
 
 

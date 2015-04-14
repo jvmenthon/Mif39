@@ -333,6 +333,7 @@ Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/main.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  QImageLoader/qimageloader.hpp
  Utility/bytebuffer.hpp

@@ -333,6 +333,7 @@ Wavefront/CMakeFiles/Wavefront.dir/wavefront.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  Utility/bytebuffer.hpp
  Utility/filedescriptor.hpp
@@ -681,6 +682,7 @@ Wavefront/CMakeFiles/Wavefront.dir/wavefrontloadermtl.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  Utility/bytebuffer.hpp
  Utility/filedescriptor.hpp
@@ -1026,6 +1028,7 @@ Wavefront/CMakeFiles/Wavefront.dir/wavefrontloaderobj.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  Utility/bytebuffer.hpp
  Utility/filedescriptor.hpp
@@ -1370,6 +1373,7 @@ Wavefront/CMakeFiles/Wavefront.dir/wavefrontmaterial.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  Utility/bytebuffer.hpp
  Utility/filedescriptor.hpp

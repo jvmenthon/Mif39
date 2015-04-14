@@ -14,6 +14,10 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "FuzzyLogicBehaviour/CMakeLists.txt"
+  "Main/CMakeLists.txt"
+  "Main/SimpleClient/CMakeLists.txt"
+  "Main/SimpleServer/CMakeLists.txt"
   "Networking/CMakeLists.txt"
   "QImageLoader/CMakeLists.txt"
   "Samples/CMakeLists.txt"
@@ -63,11 +67,15 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "AssetGenerics/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Assets/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Wavefront/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "FuzzyLogicBehaviour/CMakeFiles/CMakeDirectoryInformation.cmake"
   "QImageLoader/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/WavefrontTest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/SimpleAssetServer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/SimpleAssetClient/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Main/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Main/SimpleServer/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Main/SimpleClient/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -79,8 +87,11 @@ SET(CMAKE_DEPEND_INFO_FILES
   "AssetGenerics/CMakeFiles/AssetGenerics.dir/DependInfo.cmake"
   "Assets/CMakeFiles/Assets.dir/DependInfo.cmake"
   "Wavefront/CMakeFiles/Wavefront.dir/DependInfo.cmake"
+  "FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/DependInfo.cmake"
   "QImageLoader/CMakeFiles/QImageLoader.dir/DependInfo.cmake"
   "Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/DependInfo.cmake"
   "Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/DependInfo.cmake"
   "Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/DependInfo.cmake"
+  "Main/SimpleServer/CMakeFiles/SimpleServer.dir/DependInfo.cmake"
+  "Main/SimpleClient/CMakeFiles/SimpleClient.dir/DependInfo.cmake"
   )

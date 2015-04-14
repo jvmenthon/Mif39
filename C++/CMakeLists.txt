@@ -28,3 +28,4 @@ add_subdirectory(FuzzyLogicBehaviour)
 add_subdirectory(QImageLoader)
 
 add_subdirectory(Samples)
+add_subdirectory(Main)

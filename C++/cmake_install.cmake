@@ -41,8 +41,10 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/AssetGenerics/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Assets/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Wavefront/cmake_install.cmake")
+  INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/QImageLoader/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/cmake_install.cmake")
+  INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Main/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

@@ -333,6 +333,7 @@ Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/main.cpp.o
  Assets/Material.hpp
  Assets/Mesh.hpp
  Assets/assets.hpp
+ Assets/behaviour.hpp
  Assets/structures.hpp
  Networking/communicationpolicy.hpp
  Networking/connectionstream.hpp

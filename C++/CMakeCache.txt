@@ -198,6 +198,15 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+FuzzyLogicBehaviour_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour
+
+//Dependencies for the target
+FuzzyLogicBehaviour_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Gui;general;Utility;general;AssetInterfaces;general;AssetGenerics;general;Assets;
+
+//Value Computed by CMake
+FuzzyLogicBehaviour_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour
+
+//Value Computed by CMake
 Mif39_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++
 
 //Value Computed by CMake
@@ -228,10 +237,10 @@ Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
 Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
 
 //Value Computed by CMake
-Samples_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Samples
+Samples_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main
 
 //Value Computed by CMake
-Samples_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Samples
+Samples_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main
 
 //Value Computed by CMake
 SimpleAssetClient_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient
@@ -244,6 +253,18 @@ SimpleAssetServer_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C
 
 //Value Computed by CMake
 SimpleAssetServer_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer
+
+//Value Computed by CMake
+SimpleClient_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient
+
+//Value Computed by CMake
+SimpleClient_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient
+
+//Value Computed by CMake
+SimpleServer_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleServer
+
+//Value Computed by CMake
+SimpleServer_SOURCE_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleServer
 
 //Value Computed by CMake
 TcpNetworking_BINARY_DIR:STATIC=/home/babs/Documents/Master/39-TechnoInnov/C++/TcpNetworking
@@ -369,7 +390,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -208,6 +208,30 @@ assets.cpp.s:
 	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/assets.cpp.s
 .PHONY : assets.cpp.s
 
+behaviour.o: behaviour.cpp.o
+.PHONY : behaviour.o
+
+# target to build an object file
+behaviour.cpp.o:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/behaviour.cpp.o
+.PHONY : behaviour.cpp.o
+
+behaviour.i: behaviour.cpp.i
+.PHONY : behaviour.i
+
+# target to preprocess a source file
+behaviour.cpp.i:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/behaviour.cpp.i
+.PHONY : behaviour.cpp.i
+
+behaviour.s: behaviour.cpp.s
+.PHONY : behaviour.s
+
+# target to generate assembly for a file
+behaviour.cpp.s:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/behaviour.cpp.s
+.PHONY : behaviour.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -229,6 +253,9 @@ help:
 	@echo "... assets.o"
 	@echo "... assets.i"
 	@echo "... assets.s"
+	@echo "... behaviour.o"
+	@echo "... behaviour.i"
+	@echo "... behaviour.s"
 .PHONY : help
 
 

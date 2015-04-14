@@ -1,10 +1,13 @@
 /home/babs/Documents/Master/39-TechnoInnov/C++/AssetGenerics/CMakeFiles/AssetGenerics.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/AssetInterfaces/CMakeFiles/AssetInterfaces.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Assets/CMakeFiles/Assets.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Networking/CMakeFiles/Networking.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/QImageLoader/CMakeFiles/QImageLoader.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient/CMakeFiles/SimpleClient.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleServer/CMakeFiles/SimpleServer.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/TcpNetworking/CMakeFiles/TcpNetworking.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Utility/CMakeFiles/Utility.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Wavefront/CMakeFiles/Wavefront.dir
