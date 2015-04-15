@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/Networking.dir/connectionstream.cpp.o"
   "CMakeFiles/Networking.dir/communicationpolicy.cpp.o"
+  "CMakeFiles/Networking.dir/connectionstream.cpp.o"
   "CMakeFiles/Networking.dir/networkbuffer.cpp.o"
   "../lib/libNetworking.pdb"
   "../lib/libNetworking.so"

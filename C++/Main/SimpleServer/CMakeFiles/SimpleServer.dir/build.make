@@ -81,8 +81,8 @@ SimpleServer_EXTERNAL_OBJECTS =
 
 bin/SimpleServer: Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o
 bin/SimpleServer: Main/SimpleServer/CMakeFiles/SimpleServer.dir/build.make
-bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.2.1
-bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.2.1
+bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.3.0
+bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.3.0
 bin/SimpleServer: lib/libUtility.so
 bin/SimpleServer: lib/libNetworking.so
 bin/SimpleServer: lib/libTcpNetworking.so
@@ -96,8 +96,8 @@ bin/SimpleServer: lib/libAssets.so
 bin/SimpleServer: lib/libAssetGenerics.so
 bin/SimpleServer: lib/libAssetInterfaces.so
 bin/SimpleServer: lib/libUtility.so
-bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.2.1
-bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.2.1
+bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.3.0
+bin/SimpleServer: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.3.0
 bin/SimpleServer: Main/SimpleServer/CMakeFiles/SimpleServer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/SimpleServer"
 	cd /home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleServer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleServer.dir/link.txt --verbose=$(VERBOSE)

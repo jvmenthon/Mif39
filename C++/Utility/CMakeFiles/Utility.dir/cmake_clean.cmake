@@ -1,10 +1,10 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/Utility.dir/hasuuid.cpp.o"
-  "CMakeFiles/Utility.dir/filetokenizer.cpp.o"
-  "CMakeFiles/Utility.dir/utility.cpp.o"
-  "CMakeFiles/Utility.dir/bytebuffer.cpp.o"
-  "CMakeFiles/Utility.dir/filedescriptor.cpp.o"
   "CMakeFiles/Utility.dir/hasname.cpp.o"
+  "CMakeFiles/Utility.dir/utility.cpp.o"
+  "CMakeFiles/Utility.dir/filetokenizer.cpp.o"
+  "CMakeFiles/Utility.dir/filedescriptor.cpp.o"
+  "CMakeFiles/Utility.dir/bytebuffer.cpp.o"
+  "CMakeFiles/Utility.dir/hasuuid.cpp.o"
   "../lib/libUtility.pdb"
   "../lib/libUtility.so"
 )

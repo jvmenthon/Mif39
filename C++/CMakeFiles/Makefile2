@@ -611,9 +611,9 @@ Samples/SimpleAssetServer/preinstall:
 
 # All Build rule for target.
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Assets/CMakeFiles/Assets.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
@@ -668,9 +668,9 @@ Samples/SimpleAssetClient/preinstall:
 
 # All Build rule for target.
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Networking/CMakeFiles/Networking.dir/all
+Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Assets/CMakeFiles/Assets.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
@@ -743,9 +743,9 @@ Main/SimpleServer/preinstall:
 
 # All Build rule for target.
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Assets/CMakeFiles/Assets.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all
@@ -800,9 +800,9 @@ Main/SimpleClient/preinstall:
 
 # All Build rule for target.
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Utility/CMakeFiles/Utility.dir/all
-Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Assets/CMakeFiles/Assets.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Wavefront/CMakeFiles/Wavefront.dir/all

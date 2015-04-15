@@ -29,9 +29,9 @@
             <Add option="-DQT_GUI_LIB" />
             <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/." />
             <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient" />
-            <Add directory="/usr/include/qt5" />
-            <Add directory="/usr/include/qt5/QtCore" />
-            <Add directory="/usr/include/qt5/QtGui" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
             <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
          </Compiler>
          <MakeCommands>
@@ -53,9 +53,9 @@
             <Add option="-DQT_GUI_LIB" />
             <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/." />
             <Add directory="/home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient" />
-            <Add directory="/usr/include/qt5" />
-            <Add directory="/usr/include/qt5/QtCore" />
-            <Add directory="/usr/include/qt5/QtGui" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtCore" />
+            <Add directory="/usr/include/x86_64-linux-gnu/qt5/QtGui" />
             <Add directory="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64" />
          </Compiler>
          <MakeCommands>
@@ -114,6 +114,9 @@
           <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
       </Unit>
       <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
+      </Unit>
+      <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_AppMenuPlatformThemePlugin.cmake">
           <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt5Gui\" />
       </Unit>
       <Unit filename="/home/babs/Documents/Master/39-TechnoInnov/C++/../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
