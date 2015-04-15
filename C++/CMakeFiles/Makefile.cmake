@@ -23,6 +23,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "Samples/CMakeLists.txt"
   "Samples/SimpleAssetClient/CMakeLists.txt"
   "Samples/SimpleAssetServer/CMakeLists.txt"
+  "Samples/ThreadedServer/CMakeLists.txt"
   "Samples/WavefrontTest/CMakeLists.txt"
   "TcpNetworking/CMakeLists.txt"
   "Utility/CMakeLists.txt"
@@ -74,6 +75,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "Samples/WavefrontTest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/SimpleAssetServer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Samples/SimpleAssetClient/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Samples/ThreadedServer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Main/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Main/SimpleServer/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Main/SimpleClient/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -93,6 +95,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir/DependInfo.cmake"
   "Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/DependInfo.cmake"
   "Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/DependInfo.cmake"
+  "Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/DependInfo.cmake"
   "Main/SimpleServer/CMakeFiles/SimpleServer.dir/DependInfo.cmake"
   "Main/SimpleClient/CMakeFiles/SimpleClient.dir/DependInfo.cmake"
   )

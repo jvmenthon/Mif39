@@ -327,6 +327,7 @@ Main/SimpleClient/CMakeFiles/SimpleClient.dir/main.cpp.o
  Assets/Mesh.hpp
  Assets/assets.hpp
  Assets/behaviour.hpp
+ Assets/gameentity.hpp
  Assets/structures.hpp
  Networking/communicationpolicy.hpp
  Networking/connectionstream.hpp

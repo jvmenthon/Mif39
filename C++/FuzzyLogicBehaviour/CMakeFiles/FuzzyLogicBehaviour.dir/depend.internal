@@ -328,6 +328,7 @@ FuzzyLogicBehaviour/CMakeFiles/FuzzyLogicBehaviour.dir/fuzzylogicbehaviour.cpp.o
  Assets/Mesh.hpp
  Assets/assets.hpp
  Assets/behaviour.hpp
+ Assets/gameentity.hpp
  Assets/structures.hpp
  Utility/bytebuffer.hpp
  Utility/filedescriptor.hpp

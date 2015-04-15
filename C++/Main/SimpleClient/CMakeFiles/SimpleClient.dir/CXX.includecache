@@ -3069,8 +3069,16 @@ Assets/Mesh.hpp
 Assets/Assets/Mesh.hpp
 Assets/behaviour.hpp
 Assets/Assets/behaviour.hpp
+Assets/gameentity.hpp
+Assets/Assets/gameentity.hpp
 
 Assets/behaviour.hpp
+AssetInterfaces/interfaces.hpp
+Assets/AssetInterfaces/interfaces.hpp
+AssetGenerics/generics.hpp
+Assets/AssetGenerics/generics.hpp
+
+Assets/gameentity.hpp
 AssetInterfaces/interfaces.hpp
 Assets/AssetInterfaces/interfaces.hpp
 AssetGenerics/generics.hpp

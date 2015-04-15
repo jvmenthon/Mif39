@@ -326,6 +326,7 @@ Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/Material.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/Mesh.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/assets.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/behaviour.hpp
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/gameentity.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Assets/structures.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Networking/communicationpolicy.hpp
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/main.cpp.o: Networking/connectionstream.hpp

@@ -232,6 +232,30 @@ behaviour.cpp.s:
 	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/behaviour.cpp.s
 .PHONY : behaviour.cpp.s
 
+gameentity.o: gameentity.cpp.o
+.PHONY : gameentity.o
+
+# target to build an object file
+gameentity.cpp.o:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/gameentity.cpp.o
+.PHONY : gameentity.cpp.o
+
+gameentity.i: gameentity.cpp.i
+.PHONY : gameentity.i
+
+# target to preprocess a source file
+gameentity.cpp.i:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/gameentity.cpp.i
+.PHONY : gameentity.cpp.i
+
+gameentity.s: gameentity.cpp.s
+.PHONY : gameentity.s
+
+# target to generate assembly for a file
+gameentity.cpp.s:
+	cd /home/babs/Documents/Master/39-TechnoInnov/C++ && $(MAKE) -f Assets/CMakeFiles/Assets.dir/build.make Assets/CMakeFiles/Assets.dir/gameentity.cpp.s
+.PHONY : gameentity.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -256,6 +280,9 @@ help:
 	@echo "... behaviour.o"
 	@echo "... behaviour.i"
 	@echo "... behaviour.s"
+	@echo "... gameentity.o"
+	@echo "... gameentity.i"
+	@echo "... gameentity.s"
 .PHONY : help
 
 

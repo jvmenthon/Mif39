@@ -1,4 +1,5 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/Assets.dir/gameentity.cpp.o"
   "CMakeFiles/Assets.dir/Material.cpp.o"
   "CMakeFiles/Assets.dir/Image.cpp.o"
   "CMakeFiles/Assets.dir/assets.cpp.o"

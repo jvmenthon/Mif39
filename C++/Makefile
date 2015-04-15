@@ -255,6 +255,19 @@ SimpleAssetClient/fast:
 .PHONY : SimpleAssetClient/fast
 
 #=============================================================================
+# Target rules for targets named ThreadedServer
+
+# Build rule for target.
+ThreadedServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ThreadedServer
+.PHONY : ThreadedServer
+
+# fast build rule for target.
+ThreadedServer/fast:
+	$(MAKE) -f Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/build.make Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/build
+.PHONY : ThreadedServer/fast
+
+#=============================================================================
 # Target rules for targets named SimpleServer
 
 # Build rule for target.
@@ -300,6 +313,7 @@ help:
 	@echo "... WavefrontTest"
 	@echo "... SimpleAssetServer"
 	@echo "... SimpleAssetClient"
+	@echo "... ThreadedServer"
 	@echo "... SimpleServer"
 	@echo "... SimpleClient"
 .PHONY : help

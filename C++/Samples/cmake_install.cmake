@@ -37,6 +37,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetServer/cmake_install.cmake")
   INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/SimpleAssetClient/cmake_install.cmake")
+  INCLUDE("/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/ThreadedServer/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

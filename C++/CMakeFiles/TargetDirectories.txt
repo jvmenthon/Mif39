@@ -9,6 +9,7 @@
 /home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient/CMakeFiles/SimpleClient.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleServer/CMakeFiles/SimpleServer.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/TcpNetworking/CMakeFiles/TcpNetworking.dir
+/home/babs/Documents/Master/39-TechnoInnov/C++/Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Utility/CMakeFiles/Utility.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Wavefront/CMakeFiles/Wavefront.dir
 /home/babs/Documents/Master/39-TechnoInnov/C++/Samples/WavefrontTest/CMakeFiles/WavefrontTest.dir
