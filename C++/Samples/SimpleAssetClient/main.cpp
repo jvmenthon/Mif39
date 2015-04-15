@@ -19,6 +19,7 @@ int main ( int argc, char** argv ) {
     __attachAssets();*/
     __attachQImage();
     __attachWavefront();
+
     FileDescriptor file ( argv[1]);
     SharedResourceList ress = ResourceHolder::Load(file);
     SharedResourcePtr ptr = ress [0];
@@ -29,10 +30,10 @@ int main ( int argc, char** argv ) {
     options.connectionPort = 3000;
     SimpleTcpEndPoint client ( options );
     if ( client.open() == false ) exit ( -1 );
-    while ( true ) {
+    //while ( true ) {
         client.send(message); std::cout << "Sent : " << message.getLength() << " bytes" << std::endl;
-        client.receive(message); std::cout << "Recv : " << message.getLength() << " bytes" << std::endl;
-    }
+        //client.receive(message); std::cout << "Recv : " << message.getLength() << " bytes" << std::endl;
+    //}
     client.close ();
     return 0;
 }
