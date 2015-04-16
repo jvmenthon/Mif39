@@ -81,8 +81,8 @@ SimpleClient_EXTERNAL_OBJECTS =
 
 bin/SimpleClient: Main/SimpleClient/CMakeFiles/SimpleClient.dir/main.cpp.o
 bin/SimpleClient: Main/SimpleClient/CMakeFiles/SimpleClient.dir/build.make
-bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.3.0
-bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.3.0
+bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.2.1
+bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.2.1
 bin/SimpleClient: lib/libUtility.so
 bin/SimpleClient: lib/libNetworking.so
 bin/SimpleClient: lib/libTcpNetworking.so
@@ -96,8 +96,8 @@ bin/SimpleClient: lib/libAssets.so
 bin/SimpleClient: lib/libAssetGenerics.so
 bin/SimpleClient: lib/libAssetInterfaces.so
 bin/SimpleClient: lib/libUtility.so
-bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.3.0
-bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.3.0
+bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.2.1
+bin/SimpleClient: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.2.1
 bin/SimpleClient: Main/SimpleClient/CMakeFiles/SimpleClient.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../bin/SimpleClient"
 	cd /home/babs/Documents/Master/39-TechnoInnov/C++/Main/SimpleClient && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleClient.dir/link.txt --verbose=$(VERBOSE)

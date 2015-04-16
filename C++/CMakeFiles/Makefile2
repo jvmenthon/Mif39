@@ -171,8 +171,8 @@ TcpNetworking/preinstall:
 # Target rules for target TcpNetworking/CMakeFiles/TcpNetworking.dir
 
 # All Build rule for target.
-TcpNetworking/CMakeFiles/TcpNetworking.dir/all: Utility/CMakeFiles/Utility.dir/all
 TcpNetworking/CMakeFiles/TcpNetworking.dir/all: Networking/CMakeFiles/Networking.dir/all
+TcpNetworking/CMakeFiles/TcpNetworking.dir/all: Utility/CMakeFiles/Utility.dir/all
 	$(MAKE) -f TcpNetworking/CMakeFiles/TcpNetworking.dir/build.make TcpNetworking/CMakeFiles/TcpNetworking.dir/depend
 	$(MAKE) -f TcpNetworking/CMakeFiles/TcpNetworking.dir/build.make TcpNetworking/CMakeFiles/TcpNetworking.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/babs/Documents/Master/39-TechnoInnov/C++/CMakeFiles  23 24 25
@@ -613,9 +613,9 @@ Samples/SimpleAssetServer/preinstall:
 # Target rules for target Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir
 
 # All Build rule for target.
-Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Networking/CMakeFiles/Networking.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Utility/CMakeFiles/Utility.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetServer/CMakeFiles/SimpleAssetServer.dir/all: Assets/CMakeFiles/Assets.dir/all
@@ -670,9 +670,9 @@ Samples/SimpleAssetClient/preinstall:
 # Target rules for target Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir
 
 # All Build rule for target.
-Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Networking/CMakeFiles/Networking.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Networking/CMakeFiles/Networking.dir/all
+Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Utility/CMakeFiles/Utility.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/SimpleAssetClient/CMakeFiles/SimpleAssetClient.dir/all: Assets/CMakeFiles/Assets.dir/all
@@ -727,9 +727,9 @@ Samples/ThreadedServer/preinstall:
 # Target rules for target Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir
 
 # All Build rule for target.
-Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: Networking/CMakeFiles/Networking.dir/all
 Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: Utility/CMakeFiles/Utility.dir/all
 Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Samples/ThreadedServer/CMakeFiles/ThreadedServer.dir/all: Assets/CMakeFiles/Assets.dir/all
@@ -802,9 +802,9 @@ Main/SimpleServer/preinstall:
 # Target rules for target Main/SimpleServer/CMakeFiles/SimpleServer.dir
 
 # All Build rule for target.
-Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Utility/CMakeFiles/Utility.dir/all
-Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Networking/CMakeFiles/Networking.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Utility/CMakeFiles/Utility.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Main/SimpleServer/CMakeFiles/SimpleServer.dir/all: Assets/CMakeFiles/Assets.dir/all
@@ -859,9 +859,9 @@ Main/SimpleClient/preinstall:
 # Target rules for target Main/SimpleClient/CMakeFiles/SimpleClient.dir
 
 # All Build rule for target.
-Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Utility/CMakeFiles/Utility.dir/all
-Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Networking/CMakeFiles/Networking.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: TcpNetworking/CMakeFiles/TcpNetworking.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Networking/CMakeFiles/Networking.dir/all
+Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Utility/CMakeFiles/Utility.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetInterfaces/CMakeFiles/AssetInterfaces.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: AssetGenerics/CMakeFiles/AssetGenerics.dir/all
 Main/SimpleClient/CMakeFiles/SimpleClient.dir/all: Assets/CMakeFiles/Assets.dir/all

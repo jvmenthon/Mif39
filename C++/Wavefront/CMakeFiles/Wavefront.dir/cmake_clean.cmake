@@ -1,8 +1,8 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/Wavefront.dir/wavefrontmaterial.cpp.o"
   "CMakeFiles/Wavefront.dir/wavefrontloaderobj.cpp.o"
-  "CMakeFiles/Wavefront.dir/wavefront.cpp.o"
   "CMakeFiles/Wavefront.dir/wavefrontloadermtl.cpp.o"
+  "CMakeFiles/Wavefront.dir/wavefrontmaterial.cpp.o"
+  "CMakeFiles/Wavefront.dir/wavefront.cpp.o"
   "../lib/libWavefront.pdb"
   "../lib/libWavefront.so"
 )

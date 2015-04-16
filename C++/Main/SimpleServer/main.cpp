@@ -1,6 +1,7 @@
 #include "QImageLoader/qimageloader.hpp"
 #include "Wavefront/wavefront.hpp"
 #include "AssetInterfaces/resourceholder.hpp"
+#include "Assets/Mesh.hpp"
 
 #include "TcpNetworking/simpletcpstartpoint.hpp"
 
@@ -65,6 +66,14 @@ int main ( int argc, char** argv ) {
         /*  server.send(client,message);
             std::cout << "Sent : " << message.getLength() << " bytes" << std::endl;
         */
+
+        unsigned long long i = 0;
+        //Assets::Mesh mesh;
+        //i = mesh._fromBuffer(message, i);
+        SharedResourcePtr pt = ResourceHolder::FromBuffer(message, i);
+        pt->Usage();
+       std::cout << "DATNAME :" << (*pt).getName().toStdString() << std::endl;
+
         if(res) break;
 
     }
