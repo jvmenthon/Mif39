@@ -5,6 +5,8 @@
 #include <fstream>
 #include <QString>
 #include <sstream>
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -26,7 +28,7 @@ public:
     void SetText(QVector<QVector<float> > val) { textures = val; }
 
     Mesh Merge(Mesh B); //Merge de B sur A
-    void LoadObj(string);
+    bool LoadObj(string);
     void SaveObj(string);
 
 private:

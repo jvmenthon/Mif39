@@ -1,5 +1,6 @@
 #include "mesh.h"
 
+
 Mesh::Mesh() {}
 
 Mesh::Mesh(QVector<QVector<float> > geo, QVector<QVector<int> > topology):geometry(geo), topo(topology)
@@ -36,21 +37,25 @@ Mesh Mesh::Merge(Mesh B) //Merge de B sur A
 
 void Mesh::SaveObj(std::string name)
 {
+    cout<<"Opening file"<<endl;
     ofstream myfile;
     myfile.open (name.c_str());
+    cout<<"Writing vertices"<<endl;
     for(int i=0;i<geometry.size();i++)
     {
         myfile << "v " << geometry[i][0] << " " << geometry[i][1]  << " " << geometry[i][2] << "\n";
     }
+    cout<<"Writing normals"<<endl;
     for(int i=0;i<normals.size();i++)
     {
         myfile << "vn " << normals[i][0] << " " << normals[i][1]  << " " << normals[i][2] << "\n";
     }
+    cout<<"Writing textures"<<endl;
     for(int i=0;i<textures.size();i++)
     {
         myfile << "vt " << textures[i][0] << " " << textures[i][1]  << "\n";
     }
-
+    cout<<"Writing faces"<<endl;
     myfile << "f ";
     for(int i=0;i<topo.size();i++)
     {
@@ -68,22 +73,20 @@ void Mesh::SaveObj(std::string name)
         }
         else {myfile << topo[i][0]<<"/"<<topo[i][1]<<"/"<<topo[i][2] << " " ;}
     }
-
+    cout<<"Closing file"<<endl;
     myfile.close();
+    cout<<"Save done"<<endl;
 }
 
-void Mesh::LoadObj(std::string name)
+bool Mesh::LoadObj(std::string name)
 {
-
-
-
-    QVector<float> TempTopology;
+    bool check = false;
+    int kV,kVT,kVN,kF;
     std::ifstream File(name.c_str());
     string Line;
     string Name;
-
+    cout<<"Begin parsing"<<endl;
     while(std::getline(File, Line)){
-
       if(Line == "" || Line[0] == '#')// Skip everything and continue with the next line
         continue;
 
@@ -91,6 +94,8 @@ void Mesh::LoadObj(std::string name)
       LineStream >> Name;
 
       if(Name == "v"){// Vertex
+        cout<<"Vertices parsed"<<endl;
+        kV++;
         float Vertex[3];
         QVector<float> TempVertices;
         sscanf(Line.c_str(), "%*s %f %f %f", &Vertex[0], &Vertex[1], &Vertex[2]);
@@ -100,6 +105,7 @@ void Mesh::LoadObj(std::string name)
         geometry.push_back(TempVertices);
       }
       if(Name == "vn"){// Normales
+          kVN++;
         float Vertex[3];
         QVector<float> TempNormals;
         sscanf(Line.c_str(), "%*s %f %f %f", &Vertex[0], &Vertex[1], &Vertex[2]);
@@ -109,6 +115,7 @@ void Mesh::LoadObj(std::string name)
         normals.push_back(TempNormals);
       }
       if(Name == "vt"){// Textures
+        kVT++;
         float Vertex[2];
         QVector<float> TempTextures;
         sscanf(Line.c_str(), "%*s %f %f", &Vertex[0], &Vertex[1]);
@@ -118,6 +125,7 @@ void Mesh::LoadObj(std::string name)
         textures.push_back(TempTextures);
       }
       if(Name == "f"){// Faces
+        kF++;
         float Vertex[3][3];
         QVector<int> TempTopology;
         sscanf(Line.c_str(), "%*s %f/%f/%f %f/%f/%f %f/%f/%f",
@@ -133,5 +141,12 @@ void Mesh::LoadObj(std::string name)
         TempTopology.push_back(Vertex[2][0]);TempTopology.push_back(Vertex[2][1]);TempTopology.push_back(Vertex[2][2]);
         topo.push_back(TempTopology);
       }
+
     };
+    cout<<"End parsing"<<endl;
+
+    if(kV==geometry.size() && kVT==textures.size() && kVN==normals.size() && kF==topo.size())
+        check = true;
+
+    return check;
 }
