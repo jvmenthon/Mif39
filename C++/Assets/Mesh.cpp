@@ -28,17 +28,19 @@ void MaterialGroup::_createAttributes ()
 
 ByteBuffer MaterialGroup::_toBuffer ()
 {
+    Triangle tmp; ByteBuffer fake = ::toBuffer ( tmp );
     unsigned long long index = 0, nfaces = get < unsigned int > ( "#Faces" );
     ByteBuffer mat = ::toBuffer ( get < QUuid > ( "Material" ) );
     ByteBuffer mesh = ::toBuffer ( get < QUuid > ( "Mesh" ) );
     unsigned long long totalDataSize = mat.getLength() + mesh.getLength() +
             sizeof ( unsigned int ) +
-            nfaces * sizeof ( Triangle );
+            nfaces * fake.getLength();
     ByteBuffer buffer ( totalDataSize );
     index = ::toBuffer ( buffer, index, mat.getData(), mat.getLength () );
     index = ::toBuffer ( buffer, index, mesh.getData(), mesh.getLength () );
     index = ::toBuffer ( buffer, index, get < unsigned int > ( "#Faces" ) );
-    index = ::toBuffer ( buffer, index, get < Triangle* > ( "Faces" ), get < unsigned int > ( "#Faces" ) );
+    for ( int i = 0 ; i < get < unsigned int > ( "#Faces" ) ; i ++ )
+        index = ::toBuffer ( buffer, index, get < Triangle* > ( "Faces" ) [ i ] );
     return buffer;
 }
 
@@ -52,7 +54,9 @@ unsigned long long MaterialGroup::_fromBuffer ( const ByteBuffer& buffer, unsign
         unsigned int count;
         lindex = ::fromBuffer ( buffer, lindex, count ); set < unsigned int > ( "#Faces", count );
         Triangle* tri = new Triangle [ count ];
-        lindex = ::fromBuffer ( buffer, lindex, tri, count ); set < Triangle* > ( "Faces", tri );
+        for ( int i = 0 ; i < count ; i ++ )
+            lindex = ::fromBuffer ( buffer, lindex, tri [ i ] );
+        set < Triangle* > ( "Faces", tri );
     }
     return lindex;
 }
@@ -85,6 +89,7 @@ void Mesh::Usage()
 
 void Mesh::_createAttributes ()
 {
+    addAttribute < QString > ( "_RealName", "" );
     addAttribute < unsigned int > ( "#Vertices", 0 );
     addAttribute < unsigned int > ( "#TexVertices", 0 );
     addAttribute < unsigned int > ( "#Normals", 0 );
@@ -97,6 +102,7 @@ void Mesh::_createAttributes ()
 }
 
 ByteBuffer Mesh::_toBuffer() {
+    Triangle tmp; ByteBuffer fake = ::toBuffer ( tmp );
     ByteBuffer uuid = ::toBuffer ( getUUID() );
     ByteBuffer name = ::toBuffer ( getName () );
 
@@ -104,7 +110,7 @@ ByteBuffer Mesh::_toBuffer() {
             get < unsigned int > ( "#Vertices" ) * sizeof ( Vector3d ) +
             get < unsigned int > ( "#TexVertices" ) * sizeof ( Vector2d ) +
             get < unsigned int > ( "#Normals" ) * sizeof ( Vector3d )
-            + get < unsigned int > ( "#Faces" ) * sizeof ( Triangle ),
+            + get < unsigned int > ( "#Faces" ) * fake.getLength(),
             index = 0;
     ByteBuffer result ( totalSize );
     index = ::toBuffer ( result, index, get < unsigned int > ( "#Vertices" ) );
@@ -115,7 +121,8 @@ ByteBuffer Mesh::_toBuffer() {
     index = ::toBuffer ( result, index, get < Vector3d* > ( "Normals" ), get < unsigned int > ( "#Normals" ) );
     /**/
     index = ::toBuffer ( result, index, get < unsigned int > ( "#Faces" ) );
-    index = ::toBuffer ( result, index, get < Triangle* > ( "Faces" ), get < unsigned int > ( "#Faces" ) );
+    for ( int i = 0 ; i < get < unsigned int > ( "#Faces" ) ; i ++ )
+        index = ::toBuffer ( result, index, get < Triangle* > ( "Faces" ) [ i ] );
     /**/
     index = ::toBuffer ( result, index, getSize < MaterialGroup* > ( "MaterialGroups" ) );
     for ( unsigned int i = 0 ; i < getSize < MaterialGroup* > ( "MaterialGroups" ) ; i ++ ) {
@@ -151,7 +158,9 @@ unsigned long long Mesh::_fromBuffer ( const ByteBuffer& buffer, unsigned long l
         unsigned int count;
         lindex = ::fromBuffer ( buffer, lindex, count ); set < unsigned int > ( "#Faces", count );
         Triangle* tri = new Triangle [ count ];
-        lindex = ::fromBuffer ( buffer, lindex, tri, count ); set < Triangle* > ( "Faces", tri );
+        for ( int i = 0 ; i < count ; i ++ )
+            lindex = ::fromBuffer ( buffer, lindex, tri [ i ] );
+        set < Triangle* > ( "Faces", tri );
     }
     /**/
     {
