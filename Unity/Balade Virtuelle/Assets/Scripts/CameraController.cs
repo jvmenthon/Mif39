@@ -4,7 +4,6 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 	
 	public GameObject player;
-	public Camera camera;
 	private Vector3 offset;
 	private float turnSpeed = 5.0f;
 	private int zoom = 5;
@@ -19,6 +18,7 @@ public class CameraController : MonoBehaviour {
 	void Start () {
 
 		offset = transform.position - player.transform.position;
+		transform.position = player.transform.position;
 	}
 
 	void Update(){
