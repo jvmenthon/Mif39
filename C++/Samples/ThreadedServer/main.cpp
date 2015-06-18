@@ -25,6 +25,8 @@ void OnConnect ( QUuid client ) {
     clt->uuid = client;
     clt->server = theServer;
     clt->closeMe = false;
+    clt->recv_buffering.mGettingReleaseBuffer = true;
+    clt->send_buffering.mGettingReleaseBuffer = true;
     pthread_create ( &(clt->recv_thread), NULL, client_thread_receive, clt );
     pthread_create ( &(clt->send_thread), NULL, client_thread_send, clt );
     theClients [ client ] = clt;
@@ -44,6 +46,9 @@ void OnReceive ( QUuid client ) {
     if ( message->getLength() > 0 ) {
         std::cout << "Recv : " << message->getLength() << " bytes from " << theClients [ client ]->uuid.toString().toStdString() << std::endl;
         // gestion du message recu cote serveur
+        unsigned long long index = 0;
+        SharedResourcePtr mesh = ResourceHolder::FromBuffer(*message, index);
+        std::cout << "Got mesh" << std::endl;
     }
     delete message;
 }
@@ -52,7 +57,8 @@ void* client_thread_receive ( void* data )
 {
     ClientData* client = (ClientData*) data;
     ByteBuffer* message = new ByteBuffer;
-    while ( client->closeMe ) {
+    std::cout << "Start client " << client->uuid.toString().toStdString() << " reception thread" << std::endl;
+    while ( ! client->closeMe ) {
         if ( client->server->dataAvailable(client->uuid))
             client->server->receive(client->uuid,*message);
         if ( message->getLength() > 0 ) {
@@ -68,7 +74,8 @@ void* client_thread_receive ( void* data )
 void* client_thread_send ( void* data )
 {
     ClientData* client = (ClientData*) data;
-    while ( client->closeMe ) {
+    std::cout << "Start client " << client->uuid.toString().toStdString() << " emission thread" << std::endl;
+    while ( ! client->closeMe ) {
         if ( client->send_buffering.available() ) {
             ByteBuffer* message;
             client->send_buffering.get(message);
