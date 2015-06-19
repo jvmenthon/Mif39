@@ -13,6 +13,8 @@ public class CameraController : MonoBehaviour {
 	private bool isZoomed = false;
 	private bool isDezoomed = false;
 
+	private Soldiers Sds;
+
 	
 	// Use this for initialization
 	void Start () {

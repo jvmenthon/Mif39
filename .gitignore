@@ -7,3 +7,13 @@ build/
 CMakeLists.txt.user
 CMakeCache.txt
 cmake_install.cmake
+Unity/Balade Virtuelle/Temp/
+Unity/Balade Virtuelle/Library/ShaderCache/
+Unity/Balade Virtuelle/Library/metadata/
+C#/
+C++/
+Library/
+C#/Library/metadata
+C++/Library/metadata
+Library/metadata
+ProjectSettings/
