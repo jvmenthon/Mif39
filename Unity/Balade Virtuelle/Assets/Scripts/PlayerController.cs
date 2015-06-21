@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	AudioSource laser;
 	AudioSource capture;
 	AudioSource mouvement;
+	AudioSource explosion;
 	private float defaultSpeed = 75.0f;
 	private float speedForce = 5.0f;
 	public float speed;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 	private float lift = 10.0f;
 	public float force;
 	public ParticleSystem explosionEffect;
+	public ParticleSystem reactorEffect;
 	public Camera cam;
 
 	void Start()
@@ -24,8 +26,12 @@ public class PlayerController : MonoBehaviour {
 		laser = sounds[0];
 		capture = sounds[1];
 		mouvement = sounds[2];
+		explosion = sounds[3];
 		line.enabled = false;
 		explosionEffect.gameObject.SetActive(false);
+		reactorEffect.gameObject.SetActive(false);
+		reactorEffect.transform.rotation.Set (0.0f, 0.0f, 0.0f, 0.0f);
+		//reactorEffect.transform.rotation.x = 0.0f;
 	}
 
 
@@ -51,48 +57,84 @@ public class PlayerController : MonoBehaviour {
 			(transform.position.z - cam.transform.position.z) * (transform.position.z - cam.transform.position.z));
 
 		if (Input.GetKey (KeyCode.Z)) {
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x + speed * Time.deltaTime * (transform.position.x - cam.transform.position.x) / CPdistance, 
 			                                  transform.position.y, 
 			                                  transform.position.z + speed * Time.deltaTime * (transform.position.z - cam.transform.position.z) / CPdistance);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+
+			reactorEffect.gameObject.transform.rotation.Set (0.0f, 180.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}
 		if(Input.GetKey (KeyCode.S)){
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x - speed*Time.deltaTime * (transform.position.x - cam.transform.position.x)/CPdistance, 
 			                                  transform.position.y, 
 			                                  transform.position.z - speed*Time.deltaTime * (transform.position.z - cam.transform.position.z)/CPdistance);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+
+			reactorEffect.gameObject.transform.rotation.Set (0.0f, 0.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}
 		if (Input.GetKey (KeyCode.D)){
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x + speed*Time.deltaTime * (transform.position.z - cam.transform.position.z)/CPdistance, 
 			                                  transform.position.y, 
 			                                  transform.position.z - speed*Time.deltaTime * (transform.position.x - cam.transform.position.x)/CPdistance);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+
+			reactorEffect.gameObject.transform.rotation.Set (0.0f, 90.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}
 		if(Input.GetKey (KeyCode.Q)){
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x - speed*Time.deltaTime * (transform.position.z - cam.transform.position.z)/CPdistance, 
 			                                  transform.position.y, 
 			                                  transform.position.z + speed*Time.deltaTime * (transform.position.x - cam.transform.position.x)/CPdistance);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+			reactorEffect.gameObject.transform.rotation.Set (0.0f, 270.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}	
 
 		if (Input.GetKey (KeyCode.A)){
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x, transform.position.y + lift*Time.deltaTime, transform.position.z);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+			reactorEffect.gameObject.transform.rotation.Set (90.0f, 0.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}
 		if(Input.GetKey (KeyCode.E)){
+			reactorEffect.gameObject.transform.position = transform.position;
 			transform.position = new Vector3 (transform.position.x, transform.position.y - lift*Time.deltaTime, transform.position.z);
 			if (!mouvement.isPlaying)
 				mouvement.Play ();
+
+			reactorEffect.gameObject.transform.rotation.Set (-90.0f, 0.0f, 0.0f, 0.0f);
+			reactorEffect.gameObject.SetActive(true);
+			reactorEffect.Play(true);
 		}
 		if (Input.GetKeyDown (KeyCode.LeftShift)) 
 		{
 			if(superSpeed == false)
+			{
 				speed = defaultSpeed * speedForce;
+				superSpeed = true;
+			}
 
 			else
 				speed = defaultSpeed;
@@ -107,6 +149,8 @@ public class PlayerController : MonoBehaviour {
 		line.enabled = true;
 		if(!laser.isPlaying)
 			laser.Play();
+
+
 
 		while (Input.GetButtonDown("Fire1")) 
 		{
@@ -124,6 +168,8 @@ public class PlayerController : MonoBehaviour {
 				explosionEffect.gameObject.SetActive(true);
 				explosionEffect.gameObject.transform.position = hit.point;
 				explosionEffect.Play(true);
+				laser.Stop();
+				explosion.Play();
 			}
 				
 			else
@@ -147,16 +193,18 @@ public class PlayerController : MonoBehaviour {
 			capture.Play();
 		while (Input.GetButton("Fire2")) 
 		{
+
 			//Ray ray = new Ray(transform.position,transform.forward);
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			
 			line.SetPosition(0,transform.position);
 			
-			if(Physics.Raycast(ray,out hit, 500))
+			if(Physics.Raycast(ray,out hit, 500) && hit.rigidbody != gameObject.GetComponent<Rigidbody>())
 			{
 				line.SetPosition(1,hit.point);
-				//hit.rigidbody.AddExplosionForce(force,hit.point,1,0,ForceMode.Impulse); A remplacer par la force de pull gravity
+				Vector3 way = hit.point - transform.position;
+				hit.rigidbody.AddForce(-force * way,ForceMode.Force);
 			}
 			
 			else
