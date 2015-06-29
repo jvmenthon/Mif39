@@ -1,6 +1,5 @@
-#  NDIAYE Mame Bigue
 #  NGUYEN LE Duc Tan
-#  3TC2 2011
+#  MIF39 Lyon 1 Informatique
 
 
 CC=gcc
@@ -26,7 +25,7 @@ $(BIN): $(OBJ)
 tar: clean
 	(cd .. ; tar --exclude=src-dist/.svn -zcvf 3TC-P2P-sources.tgz src-dist ) 
 clean:
-	rm -f $(OBJ) $(BIN)
+	rm -Rf $(OBJ) $(BIN) log.txt repertoire_node_* *~
 
 p2p_main.o: p2p_main.c p2p_common.h
 p2p_addr.o: p2p_addr.c p2p_addr.h p2p_common.h
